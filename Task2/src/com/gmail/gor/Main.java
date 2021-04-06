@@ -14,15 +14,15 @@ import com.gmail.gor.exceptions.NotEnoughSpaceException;
 public class Main {
 
 	public static void main(String[] args) {
-		Student student1 = new Student("Андрей", "Захаров", Gender.MAN, 19, 123);
-		Student student2 = new Student("Юрий", "Петров", Gender.MAN, 27, 1234);
-		Student student3 = new Student("Сергей", "Иванов", Gender.MAN, 3, 12345);
-		Student student4 = new Student("Наталия", "Коцюба", Gender.WOMAN, 4, 123456);
-		Student student5 = new Student("Иван", "Арбузов", Gender.MAN, 19, 1234567);
-		Student student6 = new Student("Иван", "Белов", Gender.MAN, 21, 12345678);
-		Student student7 = new Student("Иван", "Козаков", Gender.MAN, 19, 123456689);
+		Student student1 = new Student("РђРЅРґСЂРµР№", "Р—Р°С…Р°СЂРѕРІ", Gender.MAN, 19, 123);
+		Student student2 = new Student("Р®СЂРёР№", "РџРµС‚СЂРѕРІ", Gender.MAN, 27, 1234);
+		Student student3 = new Student("РЎРµСЂРіРµР№", "РРІР°РЅРѕРІ", Gender.MAN, 3, 12345);
+		Student student4 = new Student("РќР°С‚Р°Р»РёСЏ", "РљРѕС†СЋР±Р°", Gender.WOMAN, 4, 123456);
+		Student student5 = new Student("РРІР°РЅ", "РђСЂР±СѓР·РѕРІ", Gender.MAN, 19, 1234567);
+		Student student6 = new Student("РРІР°РЅ", "Р‘РµР»РѕРІ", Gender.MAN, 21, 12345678);
+		Student student7 = new Student("РРІР°РЅ", "РљРѕР·Р°РєРѕРІ", Gender.MAN, 19, 123456689);
 		Group group = new Group();
-		group.setGroupName("курс 1");
+		group.setGroupName("РєСѓСЂСЃ 1");
 
 		addStudent(student1, group);
 		addStudent(student2, group);
@@ -38,7 +38,7 @@ public class Main {
 
 		group.deleteStudent(123456689);
 
-		searchStudent("Коцюба", group);
+		searchStudent("РљРѕС†СЋР±Р°", group);
 		searchStudent("sddsds", group);
 		System.out.println("=====================================================================");
 		System.out.println(group.toString());
